@@ -1,0 +1,35 @@
+package book;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+public class DeleteBook {
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter Book id");
+		String bId=s.nextLine();
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con =DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","avinash");
+			PreparedStatement ps=con.prepareStatement("delete book where id=?");
+			PreparedStatement ps1=con.prepareStatement("select * from book where id=?");
+			
+			ps1.setString(1, bId);
+			ResultSet rs=ps1.executeQuery();
+			
+			while(rs.next())
+			{
+				System.out.println(rs.getString(2)+" :book deleted Successfull...");
+			}
+			ps.setString(1, bId);
+			ps.executeUpdate();
+		}
+		catch(Exception e) {e.printStackTrace();}
+		
+	}
+
+}

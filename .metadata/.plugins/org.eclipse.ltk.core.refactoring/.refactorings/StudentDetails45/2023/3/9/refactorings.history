@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.nit&apos; to &apos;jdbc_Statement&apos;&#x0D;&#x0A;- Original project: &apos;StudentDetails45&apos;&#x0D;&#x0A;- Original element: &apos;StudentDetails45/src/com.nit&apos;&#x0D;&#x0A;- Renamed element: &apos;StudentDetails45/src/jdbc_Statement&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.nit&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.nit" name="jdbc_Statement" qualified="false" references="true" stamp="1677960835488" textual="false" version="1.0"/>
+</session>

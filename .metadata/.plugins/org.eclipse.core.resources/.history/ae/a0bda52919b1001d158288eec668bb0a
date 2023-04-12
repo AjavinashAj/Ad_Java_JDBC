@@ -1,0 +1,10 @@
+package jdbc_PreparedStatement;
+
+public class Update_pPrice_Pqty_Using_pCode {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
